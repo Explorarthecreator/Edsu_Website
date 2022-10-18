@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+.heading {
+    background-image: url('../images/about/faintBG.png');
+    background-size: cover;
+    width: auto;
+    height: 350px;
+    position: relative;
+}
+
+.heading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #06040A;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.background img {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 520px;
+}
+
+.wrapped-text {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.04);
+}
+
+.wrapped-text h1 {
+    color: #06040A;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.wrapped-text p {
+    color: #06040A;
+    text-align: center;
+    padding: 20px 70px;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 40px;
+}
