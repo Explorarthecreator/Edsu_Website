@@ -2,12 +2,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #000;
+}
+
 .heading {
     background-image: url('../images/about/faintBG.png');
     background-size: cover;
     width: auto;
     height: 350px;
     position: relative;
+    z-index: -10;
 }
 
 .heading h1 {
@@ -22,27 +27,31 @@
     text-align: center;
 }
 
+.background {
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+}
+
 .background img {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 85%;
     height: 520px;
 }
 
 .wrapped-text {
-    position: absolute;
-    top: 130%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: -6rem;
+}
+
+.text {
+    background: #ffff;
     width: 70%;
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.04);
 }
 
-.wrapped-text h1 {
+.text h1 {
     color: #06040A;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -52,7 +61,7 @@
     padding-bottom: 10px;
 }
 
-.wrapped-text p {
+.text p {
     color: #06040A;
     text-align: center;
     padding: 20px 70px;
@@ -61,8 +70,74 @@
     font-weight: 500;
 }
 
-br {
+.text br {
     display: block;
     content: "";
     margin-top: 40px;
+}
+
+.our-vision {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7rem auto 0 auto;
+}
+
+.our-vision .our-vision-image img {
+    width: 400px;
+}
+
+.our-vision .our-vision-text h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #06040A;
+    font-size: xx-large;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.our-vision .our-vision-text span {
+    color: #64DD17;
+}
+
+.our-vision .our-vision-text p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #06040A;
+    width: 500px;
+}
+
+.our-mission {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7rem auto 0 auto;
+}
+
+.our-mission .our-mission-image img {
+    width: 400px;
+}
+
+.our-mission .our-mission-text h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #06040A;
+    font-size: xx-large;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.our-mission .our-mission-text span {
+    color: #64DD17;
+}
+
+.our-mission .our-mission-text p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #06040A;
+    width: 500px;
 }
