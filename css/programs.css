@@ -1,0 +1,53 @@
+/* Overall CSS (Body) */
+#overall_container{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(228, 30, 30);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CSS for the header */
+#header {
+    border: 2px solid rgb(5, 132, 178);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    height:65%;
+    width:95%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    background-image:url('../images/background.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat; 
+}
+#header h1, #header p {
+    color: rgb(255, 255, 255);
+}
+
+/* CSS for the new programs */
+#new_program{
+    height: 35%;
+    width:95%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(174, 88, 1);
+    /* gap: 10px; */
+    /* padding:30px; */
+}
+#new_program #program_img{
+    width: 30%;
+    border: 1px solid rgb(174, 88, 1);
+    background-image:url('../images/overlay.png');
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat; 
+}
