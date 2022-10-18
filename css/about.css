@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #000;
-}
-
 .heading {
     background-image: url('../images/about/faintBG.png');
     background-size: cover;
@@ -140,4 +136,97 @@ body {
     font-weight: 400;
     color: #06040A;
     width: 500px;
+}
+
+.building-gallery {
+    margin-top: 6rem;
+}
+
+.building-gallery h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #06040A;
+    font-size: xx-large;
+    padding-bottom: 3rem;
+}
+
+.building-gallery-grid {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.building-gallery-grid .field img {
+    width: 100%;
+    height: 90%;
+}
+
+.building-gallery-grid .signboard img {
+    width: 100%;
+    height: 90%;
+}
+
+.building-gallery-grid-two {
+    display: grid;
+    width: 85%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.building-gallery-grid-two .auditorium img {
+    width: 100%;
+    height: 75%;
+}
+
+.building-gallery-grid-two .medical img {
+    width: 100%;
+    height: 75%;
+}
+
+.building-gallery-grid-two .admin img {
+    width: 100%;
+    height: 75%;
+}
+
+.our-campus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+}
+
+.our-campus .facilities  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #06040A;
+    font-size: xx-large;
+}
+
+.our-campus .facilities .facilities-list {
+    margin-top: 1rem;
+}
+
+.our-campus .facilities .facilities-list .facilities-list-detail p {
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #06040A;
+}
+
+.our-campus .contact .contact-details {
+    display: flex;
+    align-items: center;
+}
+
+.our-campus .contact .contact-details p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #06040A;
+    padding-left: 10px;
 }
