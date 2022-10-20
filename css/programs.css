@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 140%;
+    height: 160%;
     border: 1px solid rgb(228, 30, 30);
     background-color: white;
     display: flex;
@@ -24,7 +24,7 @@
     height:65%;
     width:90%;
     text-align: center;
-    background-image:url('../images/background.png');
+    background-image:url('../images/programs/background.png');
     background-position: cover;
     background-size:101% 100%;
     background-repeat: no-repeat; 
@@ -87,7 +87,7 @@ img{
     justify-content: center;
     background-color: #203B93;
     color:white;
-    width: 19%;
+    width: 22%;
     gap: 10px;
     padding:15px;
     font-weight: 700;
@@ -102,12 +102,59 @@ img{
 
 /* Choose program CSS */
 #choose_program{
-    height: 40%;
+    height: 45%;
     width:90%;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: flex-start;
     border: 2px solid rgb(174, 88, 1);
-    gap: 10px 90px;
+    gap: 30px;
+    background-color: #F9F9FA;
+    padding: 25px;
+}
+#choose_program #cp_header {
+    text-align: center;
+}
+#choose_program #cp_header h1{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Oswald';
+}
+#choose_program #cp_header p{
+    font-size: 13px;
+    color: #544E5D;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+#choose_program #programs_list{
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+}
+#choose_program #programs_list #list1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    align-items: center;
+    color:#544E5D;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgb(255, 255, 255) 1px 0.5px 0.5px 1px;
+}
+#choose_program #programs_list #list1 img{
+    width:50px;
+    height:50px;
+}
+#p_text h2{
+    font-size: 23px;
+    font-weight: bolder;
+    font-family: 'Oswald';
+}
+#p_text p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Poppins";
 }
