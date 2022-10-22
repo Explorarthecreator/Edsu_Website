@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #f2f2f2;
+}
+
 .news {
     margin-top: 3rem;
 }
@@ -135,6 +139,7 @@
 .latest-news-heading {
     font-family: 'Oswald', sans-serif;
     font-size: large;
+    color: #06040A;
 }
 
 .latest-news-card {
@@ -171,6 +176,7 @@
     padding-bottom: 10px;
     font-size: 15px;
     font-weight: 500;
+    color: #06040A;
 }
 
 .latest-news-card .latest-news-card-body .text-details {
@@ -179,4 +185,5 @@
     padding-right: 20px;
     font-size: small;
     padding-bottom: 20px;
+    color: #06040A;
 }
