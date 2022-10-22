@@ -55,5 +55,5 @@ class Navigatione extends HTMLElement{
     }
 }
 
-customElements.define('Navigaton',Navigatione);
+customElements.define('app-navigaton',Navigatione);
 
