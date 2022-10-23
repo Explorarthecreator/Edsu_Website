@@ -54,6 +54,9 @@ h1{
 .nav ul li a:hover{
     color: #203b93;
 }
+.nav ul li a:active{
+    color: #203B93;
+}
 .active{
     color: #203b93;
 }
@@ -179,4 +182,25 @@ h1{
     font-size: 20px;
     line-height: 29px;
     color: #06040A;
+}
+.footer-details .icons{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-details .icons .box{
+    height: 58px;
+    width: 58px;
+    /* background-color: #06040A; */
+    background: transparent;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #544E5D;
+}
+.footer-details .icons .box:hover{
+    background: #E8E8FF;
+    color: #203B93;
 }

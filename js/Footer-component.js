@@ -13,7 +13,23 @@ class Footer extends HTMLElement{
                         <p>
                             Edo State University, Uzuaire, lorem ipsum dolor sit met, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         </p>
-                        <div class="icons"></div>
+                        <div class="icons">
+                            <a class="box" href="">
+                                <i class="fa-brands fa-facebook-f fa-2x"></i>
+                            </a>
+                            <a class="box" href="">
+                                <i class="fa-brands fa-youtube fa-2x"></i>
+                            </a>
+                            <a class="box" href="">
+                                <i class="fa-brands fa-twitter fa-2x"></i>
+                            </a>
+                            <a class="box" href="">
+                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                            </a>
+                            <a class="box" href="">
+                                <i class="fa-brands fa-instagram fa-2x"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="list-links">
@@ -90,19 +106,25 @@ class Footer extends HTMLElement{
                             Get in Touch with Us
                         </h3>
                         <div class="icon-box">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
                             <p class="details poppins">
                                 Km7, Auchi-Abuja Road, Iyamho-Uzairue Edo State, Nigeria
                             </p>
                         </div>
                         <div class="icon-box">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
                             <p class="details poppins">
                                 08064888518,08065528915, 09025412171, 07012641913
                             </p>
                         </div>
                         <div class="icon-box">
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
                             <p class="details poppins">
                                 registra@edouniversity.edu.ng
                             </p>
@@ -117,4 +139,4 @@ class Footer extends HTMLElement{
     }
 }
 
-customElements.define('app-footer',Footer);
+customElements.define('app-footer',Footer)
