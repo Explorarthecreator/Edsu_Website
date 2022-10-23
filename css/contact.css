@@ -25,13 +25,16 @@ h1{
 }
 .body{
     background-color: #EEEEEE;
-    text-align: center;
+    /* text-align: center; */
 }
 .body h1{
     font-size: 60px;
     font-weight: 600;
     line-height: 60px;
     color: #06040A;
+    text-align: center;
+    margin-top: 50px;
+
 }
 .body .contact-details{
     padding-top: 20px;
