@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
     <script src="assets/js/loader.js"></script>
@@ -28,13 +29,100 @@
     <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" class="dashboard-analytics" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 </head>
-<body>
+<body class="body">
+    <app-navigaton></app-navigaton>
+
+
+    <h1 class="oswald">
+        Contact Us
+    </h1>
+    <p class="poppins contact-details">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <div class="messagebox">
+        <h3 class="oswald">
+            Send us a message
+        </h3>
+        <div class="seperateinput">
+            <div>
+                <label for="" class="oswald">Full Name</label>
+                <input type="text" name="Full Name" id="" class="poppins bottomless almost-full">
+            </div>
+            <div>
+                <label for="Email" class="oswald">Email Addresss</label>
+                <input type="email" name="Email" id="" class="poppins bottomless almost-full">
+            </div>
+        </div>
+
+        <div class="seperateinput">
+            <div>
+                <label for="" class="oswald">Phone Number</label>
+                <input type="tel" name="Phone" id="" class="poppins bottomless almost-full">
+            </div>
+            <div>
+                <label for="company" class="oswald">Company Name</label>
+                <input type="text" name="company" id="" class="poppins bottomless almost-full">
+            </div>
+        </div>
+
+        <div>
+            <label for="" class="oswald">Message</label>
+            <textarea name="" id="" cols="30" rows="10" class="poppins bottomless full" placeholder="aefe" style="height: 80px;">Dear Sir/Madam</textarea>
+        </div>
+
+        <div class="conditions">
+            <div>
+                <input type="checkbox" name="" id="" style="height: 30px; width:41px;"> Accept terms and condition
+            </div>
+            <button class="poppins">
+                SEND
+            </button>
+        </div>
+    </div>
+
+    <div class="contact-icons">
+            <div class="icon-box">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <p class="details poppins">
+                    Km7, Auchi-Abuja Road, Iyamho-Uzairue Edo State, Nigeria
+                </p>
+            </div>
+            <div class="icon-box">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <p class="details poppins">
+                    08064888518,08065528915, 09025412171, 07012641913
+                </p>
+            </div>
+            <div class="icon-box">
+                <div class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <p class="details poppins">
+                    registra@edouniversity.edu.ng
+                </p>
+            </div>
+    </div>
 
 
 
+    <app-footer></app-footer>
 
 
 
+    <!-- BEGIN OF COMPONENTS SCRIPTS -->
+    <script src="js/Nav-component.js"></script>
+    <script src="js/Footer-component.js"></script>
+    <!-- END OF COMPONENTS SCRIPTS -->
+
+
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/4b654629d7.js" crossorigin="anonymous"></script>
 
     <!-- Do not touch. Just code. Do no come into this section. I do not know what it does but it is neccessary -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->

@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+}
+
+.heading {
+    background-image: url('../images/about/faintBG.png');
+    background-size: cover;
+    width: auto;
+    height: 350px;
+    position: relative;
+    z-index: -10;
+}
+
+.heading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #06040A;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+}
+
+.background img {
+    width: 85%;
+    height: 520px;
+}
+
+.wrapped-text {
+    display: flex;
+    justify-content: center;
+    margin-top: -6rem;
+}
+
+.text {
+    background: #ffff;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.04);
+}
+
+.text h1 {
+    color: #06040A;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.text p {
+    color: #06040A;
+    text-align: center;
+    padding: 20px 70px;
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.text br {
+    display: block;
+    content: "";
+    margin-top: 40px;
+}
+
+.our-vision {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7rem auto 0 auto;
+}
+
+.our-vision .our-vision-image img {
+    width: 400px;
+}
+
+.our-vision .our-vision-text h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #06040A;
+    font-size: xx-large;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.our-vision .our-vision-text span {
+    color: #64DD17;
+}
+
+.our-vision .our-vision-text p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #06040A;
+    width: 500px;
+}
+
+.our-mission {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7rem auto 0 auto;
+}
+
+.our-mission .our-mission-image img {
+    width: 400px;
+}
+
+.our-mission .our-mission-text h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #06040A;
+    font-size: xx-large;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.our-mission .our-mission-text span {
+    color: #64DD17;
+}
+
+.our-mission .our-mission-text p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #06040A;
+    width: 500px;
+}
+
+.building-gallery {
+    margin-top: 6rem;
+}
+
+.building-gallery h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #06040A;
+    font-size: xx-large;
+    padding-bottom: 3rem;
+}
+
+.building-gallery-grid {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.building-gallery-grid .field img {
+    width: 100%;
+    height: 90%;
+}
+
+.building-gallery-grid .signboard img {
+    width: 100%;
+    height: 90%;
+}
+
+.building-gallery-grid-two {
+    display: grid;
+    width: 85%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.building-gallery-grid-two .auditorium img {
+    width: 100%;
+    height: 75%;
+}
+
+.building-gallery-grid-two .medical img {
+    width: 100%;
+    height: 75%;
+}
+
+.building-gallery-grid-two .admin img {
+    width: 100%;
+    height: 75%;
+}
+
+.our-campus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    margin-top: 4rem;
+}
+
+.our-campus .facilities  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #06040A;
+    font-size: xx-large;
+}
+
+.our-campus .facilities .facilities-list {
+    margin-top: 1rem;
+}
+
+.our-campus .facilities .facilities-list .facilities-list-detail p {
+    font-size: small;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #06040A;
+}
+
+.our-campus .contact .contact-details {
+    display: flex;
+    align-items: center;
+}
+
+.our-campus .contact .contact-details p, .a {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #06040A;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.maps iframe {
+    border-radius: 10px;
+    width: 85%;
+    border: 0;
+    height: 50%;
+    background-color: #C4C4C4;
+}
+
+.maps {
+    margin: 7rem 0 7rem 0;
+    text-align: center;
+}
