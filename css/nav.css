@@ -15,14 +15,14 @@ h1{
     padding: 0;
     /* border: 1px solid; */
 }
-nav{
-    width: 85%;
+.nav{
+    width: 80%;
     margin: auto;
     border-bottom: 2px solid #64DD17;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px 0 20px
+    padding:10px 0;
 }
 .logo{
     display: flex;
@@ -40,24 +40,24 @@ nav{
     line-height: 33px;
     color: #261F1F;
 }
-nav ul li{
+.nav ul li{
     display: inline-block;
     margin: 0 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
 }
-nav ul li a{
+.nav ul li a{
     text-decoration: none;
     color: #261F1F;
 }
-nav ul li a:hover{
+.nav ul li a:hover{
     color: #203b93;
 }
 .active{
     color: #203b93;
 }
-button{
+.button{
     /* width: 112px; */
     /* height: 60px; */
     border: none;
@@ -70,7 +70,7 @@ button{
     color: #ffffff;
     filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.1))
 }
-button a{
+.button a{
     color: #ffffff;
     text-decoration: none;
     display: flex;

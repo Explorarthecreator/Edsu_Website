@@ -1,7 +1,7 @@
 class Navigatione extends HTMLElement{
-    connectedCallBack(){
+    connectedCallback(){
         this.innerHTML = `
-            <nav>
+            <nav class="nav">
                 <div class="logo">
                     <img src="images/nav/logo 1.png" alt="">
                     <h3>
@@ -40,12 +40,12 @@ class Navigatione extends HTMLElement{
                         </a>
                     </li>
                 </ul>
-                <button>
+                <button class="button">
                     <a href="" class="green">
                         Sign In
                     </a>
                 </button>
-                <button>
+                <button class="button">
                     <a href="" class="blue">
                         LMS
                     </a>
