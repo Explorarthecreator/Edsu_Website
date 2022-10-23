@@ -10,43 +10,43 @@ class Navigatione extends HTMLElement{
                 </div>
                 <ul>
                     <li >
-                        <a href="" class="active">
+                        <a href="index.html" class="active">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="about.html">
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="program.html">
                             Programs
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="activity.html">
                             Activity
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html">
+                        <a href="contact-us.html">
                             Contact Us
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             Students
                         </a>
                     </li>
                 </ul>
                 <button class="button">
-                    <a href="" class="green">
+                    <a href="#" class="green">
                         Sign In
                     </a>
                 </button>
                 <button class="button">
-                    <a href="" class="blue">
+                    <a href="#" class="blue">
                         LMS
                     </a>
                 </button>
