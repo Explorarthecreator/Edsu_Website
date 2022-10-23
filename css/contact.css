@@ -121,6 +121,12 @@ h1{
     height: 55px;
     border-radius: 50%;
     background-color: #203B93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon i{
+    color: #ffffff;
 }
 .icon-box p{
     /* font-family: 'Poppins'; */

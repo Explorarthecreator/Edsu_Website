@@ -30,7 +30,7 @@ class Navigatione extends HTMLElement{
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="contact.html">
                             Contact Us
                         </a>
                     </li>
