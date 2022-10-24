@@ -110,7 +110,7 @@ class Footer extends HTMLElement{
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <p class="details poppins">
-                                Km7, Auchi-Abuja Road, Iyamho-Uzairue Edo State, Nigeria
+                                Km7, Auchi-Abuja Road, <br> Iyamho-Uzairue Edo State, Nigeria
                             </p>
                         </div>
                         <div class="icon-box">
