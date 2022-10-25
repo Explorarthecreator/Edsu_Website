@@ -259,6 +259,7 @@ body {
     width: 80%;
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .teamContainer h1{
     text-align: right;
@@ -302,7 +303,7 @@ body {
     padding: 10px;
 }
 .teamPosition h4{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Oswald', sans-serif;
     /* margin-bottom: 15px; */
 }
@@ -310,6 +311,7 @@ body {
     margin: 7px 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    font-size: 14px;
 }
 .teamSocial{
     /* width: 60%; */
