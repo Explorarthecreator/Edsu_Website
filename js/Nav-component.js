@@ -2,12 +2,14 @@ class Navigatione extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
             <nav class="nav">
-                <div class="logo">
-                    <img src="images/nav/logo 1.png" alt="">
-                    <h3>
-                        Edo State <br> University Uzairue
-                    </h3>
-                </div>
+                <a href="/">
+                    <div class="logo">
+                        <img src="images/nav/logo 1.png" alt="">
+                        <h3>
+                            Edo State <br> University Uzairue
+                        </h3>
+                    </div>
+                </a>
                 <ul>
                     <li >
                         <a href="index.html" class="active">
