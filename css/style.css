@@ -1,13 +1,100 @@
-
-/* .body{
-    background-color: rgb(69, 148, 182);
-} */
-
-/* How to use the font
-
-h1{
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Poppins', sans-serif;
+.upcoming-activity {
+    width: 85%;
+    margin: auto;
 }
 
-*/
+.upcoming-activity .upcoming-activity-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upcoming-activity .upcoming-activity-details .text h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #06040A;
+}
+
+.upcoming-activity .upcoming-activity-details .text p {
+    font-family: 'Poppins', sans-serif;
+    color: #06040A;
+    width: 60%;
+    font-size: small;
+    padding: 15px 0;
+}
+
+.upcoming-activity .upcoming-activity-details .activity-button a{
+    border: 1px solid #203B93;
+    border-radius: 7px;
+    color: #203B93;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    padding: 10px 25px;
+    letter-spacing: 0.5px;
+    transition: 0.3s linear;
+}
+
+.upcoming-activity .upcoming-activity-details .activity-button a:hover {
+    background-color: #203B93;
+    border: none;
+    color: #fff;
+}
+
+.upcoming-activity .upcoming-activity-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.activity-card {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.activity-card .activity-card-text {
+    padding-left: 20px;
+}
+
+.activity-card .activity-card-text h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #06040A;
+}
+
+.activity-card .activity-card-text p {
+    font-size: x-small;
+    color: #06040A;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 0;
+}
+
+.activity-card .activity-card-text a {
+    color: #203B93;
+    font-weight: bold;
+}
+
+.activity-card img {
+    width: 300px;
+}
+
+.tour {
+    width: 85%;
+    margin: auto;
+    margin-top: 4rem;
+}
+.tour .tour-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #06040A;
+    text-align: center;
+}
+
+.tour .tour-video iframe{
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 25px auto 0 auto;
+}
