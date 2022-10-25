@@ -1,0 +1,66 @@
+/* Overall CSS (Body) */
+#wrapper{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:60px 0px;
+}
+#wrapper #activity_section{
+    height: 35%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 30px;
+    background-color: #F9F9FA;
+    padding: 25px;
+    border: 2px solid red;
+}
+#wrapper #activity_section #span {
+    text-align: center;
+}
+#wrapper #activity_section #span h2{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Oswald';
+}
+
+#wrapper #activity_section #activity{
+    width: 90%;
+    height: 30%;
+    border: 2px solid green;
+    display: flex;
+    flex-direction:row;
+    gap:30px;
+}
+#wrapper #activity_section #activity section{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+#wrapper #activity_section #activity h2{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Oswald';
+}
+#wrapper #activity_section #activity p, 
+#wrapper #activity_section #span p{
+    font-size: 13px;
+    color: #544E5D;
+    font-weight: 300;
+    font-family: "Poppins";
+}
+#wrapper #activity_section #activity img{
+    width: 30%;
+    height: 75%;
+}
