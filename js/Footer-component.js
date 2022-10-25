@@ -132,7 +132,7 @@ class Footer extends HTMLElement{
                     </div>
                 </div>
                 <p class="copyright">
-                    Edo State University Uzairue - &copy; 2021 All Rights Reserved.
+                    Edo State University Uzairue - &copy; 2022 All Rights Reserved.
                 </p>
             </footer>
         `

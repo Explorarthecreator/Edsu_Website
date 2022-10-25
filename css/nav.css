@@ -115,6 +115,7 @@ h1{
 .footer .footer-container{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(84, 78, 93, 0.603);
 }
 .footer-details{
     width: 30%;
