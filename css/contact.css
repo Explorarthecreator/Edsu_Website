@@ -25,13 +25,16 @@ h1{
 }
 .body{
     background-color: #EEEEEE;
-    text-align: center;
+    /* text-align: center; */
 }
 .body h1{
     font-size: 60px;
     font-weight: 600;
     line-height: 60px;
     color: #06040A;
+    text-align: center;
+    margin-top: 50px;
+
 }
 .body .contact-details{
     padding-top: 20px;
@@ -101,7 +104,7 @@ h1{
     font-weight:700;
 }
 .contact-icons{
-    width: 85%;
+    width: 70%;
     text-align: left;
     display: flex;
     margin: auto;
@@ -114,17 +117,23 @@ h1{
     /* width: 504px; */
 }
 .icon{
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: #203B93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon i{
+    color: #ffffff;
 }
 .icon-box p{
     /* font-family: 'Poppins'; */
     /* font-style: normal; */
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 36px;
-    width: 365px;
+    /* font-weight: 500; */
+    /* font-size: 18px; */
+    /* line-height: 36px; */
+    width: 70%;
     /* background-color: #203B93; */
 }
