@@ -79,19 +79,21 @@
             <div id="programs_list">
                 <!-- List 1 don't forget to make the list iterable 🤧-->
                 <div id="list1">
-                    <img src="./images/icons/programs_icon.png">
-                    <h2>Undergraduate</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        <br> adipiscing elit, sed do eiusmod tempor
-                        <br> incididunt ut labore et dolore.
-                    </p>
-                </div>
+                    <img src="./images/programs/icons/programs_icon.png">
+                    <div id="p_text">
+                        <h2>Post Graduate</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                            <br> adipiscing elit, sed do eiusmod tempor 
+                            <br> incididunt ut labore et dolore.
+                        </p>
+                    </div>
+                </div>   
 
                 <!-- List 2 -->
                 <div id="list1">
                     <img src="./images/programs/icons/programs_icon.png">
                     <div id="p_text">
-                        <h2>Conversion</h2>
+                        <h2>Post Graduate</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur 
                             <br> adipiscing elit, sed do eiusmod tempor 
                             <br> incididunt ut labore et dolore.
@@ -115,7 +117,35 @@
 
         <!-- Course of Study -->
         <div id="study">
-            <p>Omooo! God abeg o😭😭😭😭😭</p>
+            <h2>What Do You Want To Study</h2>
+            <div id="filter">
+                <div class="custom-select" style="width:200px;">
+                    <select>
+                      <option value="0">Faculty</option>
+                      <option value="1">Faculty of Applied Health Science</option>
+                      <option value="2">Faculty of Arts, Management and Social Sciences</option>
+                      <option value="3">College of Basic Medical Sciences</option>
+                      <option value="4">College of Clinical Sciences</option>
+                      <option value="5">Faculty of Engineering</option>
+                      <option value="6">Faculty of Law</option>
+                      <option value="7">Faculty of Science</option>
+                  </select>
+                </div>
+                <img id="img" src="./images/programs/icons/separator.png"/>
+                <div class="custom-select" style="width:200px;">
+                    <select>
+                      <option value="0">Title</option>
+                      <option value="1">Bachelor's Degree</option>
+                      <option value="2">Conversion Program</option>
+                      <option value="3">Masters Degree</option>
+                  </select>
+                </div>
+                <img id="img" src="./images/programs/icons/separator.png"/>
+                <span>
+                    <input type="search" placeholder="Search">
+                    <img class="img" src="./images/programs/icons/search.png">
+                </span>
+            </div>
         </div>
 
 
@@ -134,6 +164,7 @@
 
     <!-- Do not touch. Just code. Do no come into this section. I do not know what it does but it is neccessary -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="./js/programs/select.js"></script>
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
