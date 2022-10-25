@@ -15,19 +15,19 @@ class Footer extends HTMLElement{
                         </p>
                         <div class="icons">
                             <a class="box" href="">
-                                <i class="fa-brands fa-facebook-f fa-2x"></i>
+                                <i class="fa-brands fa-facebook-f "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-youtube fa-2x"></i>
+                                <i class="fa-brands fa-youtube "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-twitter fa-2x"></i>
+                                <i class="fa-brands fa-twitter "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                                <i class="fa-brands fa-linkedin "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-instagram fa-2x"></i>
+                                <i class="fa-brands fa-instagram "></i>
                             </a>
                         </div>
                     </div>
