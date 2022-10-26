@@ -25,6 +25,11 @@
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/fullcalendar/custom-fullcalendar.advance.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/flatpickr/flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="plugins/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/forms/theme-checkbox-radio.css" rel="stylesheet" type="text/css" />
     <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
     <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" class="dashboard-analytics" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
@@ -39,8 +44,12 @@
         </span>
     </div>
     <div id="wrapper">
-        <div id="calender">
-
+        <div id="content" class="main-content">
+                <div class="statbox widget box box-shadow">
+                    <div class="widget-content widget-content-area">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
         </div>
 
         <div id="activity_section">
@@ -66,6 +75,7 @@
     <!-- Do not touch. Just code. Do no come into this section. I do not know what it does but it is neccessary -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
@@ -79,8 +89,14 @@
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="plugins/fullcalendar/moment.min.js"></script>
+    <script src="plugins/flatpickr/flatpickr.js"></script>
+    <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
     <script src="plugins/apex/apexcharts.min.js"></script>
     <script src="assets/js/dashboard/dash_1.js"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    
+     <!--  BEGIN CUSTOM SCRIPTS FILE  -->
+     <script src="plugins/fullcalendar/custom-fullcalendar.advance.js"></script>
+     <!--  END CUSTOM SCRIPTS FILE  -->
 </body>
 </html>
