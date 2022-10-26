@@ -163,18 +163,26 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.latest-news-card .latest-news-card-body h1 {
+.latest-news-card .latest-news-card-body h1{
     font-family: 'Poppins', sans-serif;
-    padding: 15px 20px;
+    padding: 10px 20px;
     color: #203B93;
 }
 
-.latest-news-card .latest-news-card-body .text-heading {
+.latest-news-card .latest-news-card-body .tag{
     font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    color: #203B93;
+    font-weight: 700;
+    /* font-size: 17px; */
+}
+
+.latest-news-card .latest-news-card-body .text-heading {
+    font-family: 'Oswald', sans-serif;
     padding-left: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 23px;
     font-weight: 500;
     color: #06040A;
 }
