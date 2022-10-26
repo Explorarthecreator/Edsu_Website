@@ -37,8 +37,8 @@ class Navigatione extends HTMLElement{
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            Students
+                        <a href="news.html">
+                            News
                         </a>
                     </li>
                 </ul>
