@@ -3,25 +3,23 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 270%;
-    border: 1px solid rgb(228, 30, 30);
+    height: 580%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px 0px;
+    gap:60px 0px;
 }
 
 
 /* CSS for the header */
 #header {
-    border: 2px solid rgb(5, 132, 178);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:30px;
-    height:65%;
+    gap:20px;
+    height:70%;
     width:90%;
     text-align: center;
     background-image:url('../images/programs/background.png');
@@ -51,7 +49,6 @@
     flex-direction: row;
     align-items: center; 
     justify-content: flex-start;
-    border: 2px solid rgb(174, 88, 1);
     gap: 10px 90px;
 }
 img{
@@ -103,12 +100,11 @@ img{
 /* Choose program CSS */
 #choose_program{
     height: 45%;
-    width:90%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: flex-start;
-    border: 2px solid rgb(174, 88, 1);
     gap: 30px;
     background-color: #F9F9FA;
     padding: 25px;
@@ -166,7 +162,8 @@ img{
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    border: 2px solid rgb(174, 88, 1);
+    gap:30px;
+
 }
 #study h2{
     font-size: 30px;
@@ -174,15 +171,17 @@ img{
     font-family: "Oswald";
 }
 #study #filter{
-    border-radius: 10px;
-    width: 70%;
+    border-radius: 7px;
+    width: 148%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -24%;
     gap:0px 20px;
     padding:2px;
-    box-shadow: rgb(250, 245, 245) 1px 0.5px 0.5px 1px;
+    box-shadow: rgb(234, 230, 230) 2px 1px 2px 2px;
 }
+
 /* CSS for the faculty filter */
 .custom-select {
     position: relative;
@@ -212,15 +211,19 @@ img{
     border-color: transparent transparent  #203B93 transparent;
     top: 35%;
 }
+div.custom-select{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
 
 /*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
+.select-items div, .select-selected {
     padding: 8px 16px;
     border: 1px solid transparent;
     border-color: transparent transparent rgb(255, 255, 255) transparent;
     cursor: pointer;
     user-select: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 /*style items (options):*/
@@ -247,19 +250,56 @@ img{
     height: 30px;
 }
 #study #filter span{
-    outline: none;
     display: flex;
     height: 30px;
+    width: 70%;
     align-items: center;
     justify-content: center;
     gap:0px 190px;
+    padding-right: 15px;
 }
 #study #filter span input{
-    width: auto;
+    width: 100%;
     border: none;
     background-color: white;
 }
 #study #filter span .img{
     width: 15px;
     height: 15px;
+}
+
+/* CSS for courses */
+#study #course_wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#study #courses{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#study #courses section{
+    background-color: #203B93;
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#study #courses section span h2,
+#study #courses section span p,
+#study #courses section span a{
+    color: white;
+}
+#study #courses section #span_2{
+    display: flex;
+    gap: 150px 250px;
+}
+#study #courses section #span_2 img{
+    width: 30px;
+    height: 30px;
 }
