@@ -1,5 +1,11 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f2f2;
 }
 
 .heading {
@@ -8,7 +14,6 @@
     width: auto;
     height: 350px;
     position: relative;
-    z-index: -10;
 }
 
 .heading h1 {
@@ -32,6 +37,7 @@
 .background img {
     width: 85%;
     height: 520px;
+    z-index: 10;
 }
 
 .wrapped-text {
@@ -45,6 +51,7 @@
     width: 70%;
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.04);
+    z-index: 10;
 }
 
 .text h1 {
@@ -217,11 +224,13 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #06040A;
+    padding-bottom: 1rem;
 }
 
 .our-campus .contact .contact-details {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .our-campus .contact .contact-details p, .a {
@@ -244,4 +253,91 @@
 .maps {
     margin: 7rem 0 7rem 0;
     text-align: center;
+}
+/* Explorar did this. John check it out */
+.teamContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.teamContainer h1{
+    text-align: right;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #203B93;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+.contain{
+    width: 100%;
+    display: flex;
+    height: auto;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.teamBody{
+    width: 32%;
+    box-shadow: 3px 5px 6px #203B93;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    height: 400px;
+    padding-top: 10px;
+}
+.teamImage{
+    width: 70%;
+    height: 65%;
+    margin: auto;
+}
+.teamImage img{
+    width: 100%;
+    border-radius: 0;
+}
+.teamPosition{
+    /* height: 10%; */
+    width: 100%;
+    color: #222;
+    padding: 10px;
+}
+.teamPosition h4{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    /* margin-bottom: 15px; */
+}
+.teamPosition p{
+    margin: 7px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.teamSocial{
+    /* width: 60%; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin-bottom: 10px; */
+    gap: 30px;
+}
+.teamBody img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.social a {
+    color: #203B93;
+    text-decoration: none;
+    width: 20%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 20px; */
+}
+.social a:hover {
+    color: #203b93b3;
+    /* background-color: #06040A; */
 }

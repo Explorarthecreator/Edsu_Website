@@ -15,19 +15,19 @@ class Footer extends HTMLElement{
                         </p>
                         <div class="icons">
                             <a class="box" href="">
-                                <i class="fa-brands fa-facebook-f fa-2x"></i>
+                                <i class="fa-brands fa-facebook-f "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-youtube fa-2x"></i>
+                                <i class="fa-brands fa-youtube "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-twitter fa-2x"></i>
+                                <i class="fa-brands fa-twitter "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                                <i class="fa-brands fa-linkedin "></i>
                             </a>
                             <a class="box" href="">
-                                <i class="fa-brands fa-instagram fa-2x"></i>
+                                <i class="fa-brands fa-instagram "></i>
                             </a>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ class Footer extends HTMLElement{
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <p class="details poppins">
-                                Km7, Auchi-Abuja Road, Iyamho-Uzairue Edo State, Nigeria
+                                Km7, Auchi-Abuja Road, <br> Iyamho-Uzairue Edo State, Nigeria
                             </p>
                         </div>
                         <div class="icon-box">
@@ -132,7 +132,7 @@ class Footer extends HTMLElement{
                     </div>
                 </div>
                 <p class="copyright">
-                    Edo State University Uzairue - &copy; 2021 All Rights Reserved.
+                    Edo State University Uzairue - &copy; 2022 All Rights Reserved.
                 </p>
             </footer>
         `

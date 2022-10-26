@@ -6,6 +6,7 @@
     <title>Latest News</title>
     <link rel="stylesheet" href="./css/news_detail.css">
     <link rel="stylesheet" href="./css/newsletter.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
     <script src="assets/js/loader.js"></script>
@@ -30,7 +31,9 @@
     <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" class="dashboard-analytics" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 </head>
-<body>  
+<body>
+
+    <app-navigaton></app-navigaton>
 
     <section class="full-section">
         <div class="large-image">
@@ -130,9 +133,16 @@
 
 
     <app-newsletter></app-newsletter>
+    <app-footer></app-footer>
 
 
     <script src="./js/Components.js"></script>
+    <script src="js/Footer-component.js"></script>
+    <script src="js/Nav-component.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/4b654629d7.js" crossorigin="anonymous"></script>
+    
     <!-- Do not touch. Just code. Do no come into this section. I do not know what it does but it is neccessary -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>

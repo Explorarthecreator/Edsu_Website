@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program</title>
     <link rel="stylesheet" href="css/programs.css" type="text/css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
     <script src="assets/js/loader.js"></script>
@@ -28,11 +30,10 @@
     <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" class="dashboard-analytics" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 </head>
-<body>
-    <div id="overall_container">
-        <!-- Navbar -->
-        <div></div>
+<body style="background-color: #ffffff;">
+    <app-navigaton class="app-nav"></app-navigaton>
 
+    <div id="overall_container">
         <!-- Header -->
         <div id="header">
             <h1>
@@ -75,19 +76,21 @@
             <div id="programs_list">
                 <!-- List 1 don't forget to make the list iterable 🤧-->
                 <div id="list1">
-                    <img src="./images/icons/programs_icon.png">
-                    <h2>Undergraduate</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        <br> adipiscing elit, sed do eiusmod tempor
-                        <br> incididunt ut labore et dolore.
-                    </p>
-                </div>
+                    <img src="./images/programs/icons/programs_icon.png">
+                    <div id="p_text">
+                        <h2>Post Graduate</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                            <br> adipiscing elit, sed do eiusmod tempor 
+                            <br> incididunt ut labore et dolore.
+                        </p>
+                    </div>
+                </div>   
 
                 <!-- List 2 -->
                 <div id="list1">
                     <img src="./images/programs/icons/programs_icon.png">
                     <div id="p_text">
-                        <h2>Conversion</h2>
+                        <h2>Post Graduate</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur 
                             <br> adipiscing elit, sed do eiusmod tempor 
                             <br> incididunt ut labore et dolore.
@@ -111,15 +114,30 @@
 
         <!-- Course of Study -->
         <div id="study">
-            <p>Omooo! God abeg o😭😭😭😭😭</p>
+            <h2>What Do You Want To Study</h2>
+            <app-searchbox></app-searchbox>
+            <app-programs></app-programs>
         </div>
 
 
     </div>
+    <app-newsletter></app-newsletter>
 
+    <app-footer></app-footer>
+
+    <script src="js/Nav-component.js"></script>
+    <script src="js/programs/programs.js"></script>
+    <script src="js/programs/searchbox.js"></script>
+    <script src="./js/Components.js"></script>
+    <script src="js/Footer-component.js"></script>
+
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/4b654629d7.js" crossorigin="anonymous"></script>
 
     <!-- Do not touch. Just code. Do no come into this section. I do not know what it does but it is neccessary -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="./js/programs/select.js"></script>
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

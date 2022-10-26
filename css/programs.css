@@ -3,25 +3,24 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 270%;
-    border: 1px solid rgb(228, 30, 30);
+    height: 480%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px 0px;
+    gap:60px 0px;
+    margin-bottom: 100px;
 }
 
 
 /* CSS for the header */
 #header {
-    border: 2px solid rgb(5, 132, 178);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:30px;
-    height:65%;
+    gap:20px;
+    height:70%;
     width:90%;
     text-align: center;
     background-image:url('../images/programs/background.png');
@@ -51,7 +50,6 @@
     flex-direction: row;
     align-items: center; 
     justify-content: flex-start;
-    border: 2px solid rgb(174, 88, 1);
     gap: 10px 90px;
 }
 img{
@@ -103,12 +101,11 @@ img{
 /* Choose program CSS */
 #choose_program{
     height: 45%;
-    width:90%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: flex-start;
-    border: 2px solid rgb(174, 88, 1);
     gap: 30px;
     background-color: #F9F9FA;
     padding: 25px;
@@ -163,10 +160,147 @@ img{
     height: 110%;
     width:90%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center; 
-    justify-content: flex-start;
-    border: 2px solid rgb(174, 88, 1);
-    /* gap: 10px 90px */
+    justify-content: center;
+    gap:30px;
 
+}
+#study h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Oswald";
+}
+#study #filter{
+    border-radius: 7px;
+    width: 148%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -24%;
+    gap:0px 20px;
+    padding:2px;
+    box-shadow: rgb(234, 230, 230) 2px 1px 2px 2px;
+}
+
+/* CSS for the faculty filter */
+.custom-select {
+    position: relative;
+    font-family: "Oswald";
+    color:#203B93;
+    font-weight: 600;
+}
+  
+.custom-select select {
+    display: none; 
+} 
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 45%;
+    right: 14px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #203B93 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent  #203B93 transparent;
+    top: 35%;
+}
+div.custom-select{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    border: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid black;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color:#e5e5e5;
+}
+#study #filter #img{
+    width: 1px;
+    height: 30px;
+}
+#study #filter span{
+    display: flex;
+    height: 30px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    gap:0px 190px;
+    padding-right: 15px;
+}
+#study #filter span input{
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+#study #filter span .img{
+    width: 15px;
+    height: 15px;
+}
+
+/* CSS for courses */
+#study #course_wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#study #courses{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#study #courses section{
+    background-color: #203B93;
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#study #courses section span h2,
+#study #courses section span p,
+#study #courses section span a{
+    color: white;
+}
+#study #courses section #span_2{
+    display: flex;
+    gap: 150px 250px;
+}
+#study #courses section #span_2 img{
+    width: 30px;
+    height: 30px;
 }
