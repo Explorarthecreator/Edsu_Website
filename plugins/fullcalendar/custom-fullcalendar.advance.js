@@ -28,69 +28,6 @@ $(document).ready(function() {
     // Get the all <textarea> elements insdie the modal
     var textarea = document.getElementsByTagName('textarea');
 
-    // Create BackDrop ( Overlay ) Element
-    function createBackdropElement () {
-        var btn = document.createElement("div");
-        btn.setAttribute('class', 'modal-backdrop fade show')
-        document.body.appendChild(btn);
-    }
-
-    // Reset radio buttons
-
-    function clearRadioGroup(GroupName) {
-      var ele = document.getElementsByName(GroupName);
-        for(var i=0;i<ele.length;i++)
-        ele[i].checked = false;
-    }
-
-    // Reset Modal Data on when modal gets closed
-    function modalResetData() {
-        modal.style.display = "none";
-        for (i = 0; i < input.length; i++) {
-            input[i].value = '';
-        }
-        for (j = 0; j < textarea.length; j++) {
-            textarea[j].value = '';
-          i
-        }
-        clearRadioGroup("marker");
-        // Get Modal Backdrop
-        var getModalBackdrop = document.getElementsByClassName('modal-backdrop')[0];
-        document.body.removeChild(getModalBackdrop)
-    }
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-        addEvent.style.display = 'block';
-        editEvent.style.display = 'none';
-        addEventTitle.style.display = 'block';
-        editEventTitle.style.display = 'none';
-        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-        createBackdropElement();
-        enableDatePicker();
-    }
-
-    // Clear Data and close the modal when the user clicks on Discard button
-    discardModal.onclick = function() {
-        modalResetData();
-        document.getElementsByTagName('body')[0].removeAttribute('style');
-    }
-
-    // Clear Data and close the modal when the user clicks on <span> (x).
-    span.onclick = function() {
-        modalResetData();
-        document.getElementsByTagName('body')[0].removeAttribute('style');
-    }
-
-    // Clear Data and close the modal when the user clicks anywhere outside of the modal.
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modalResetData();
-            document.getElementsByTagName('body')[0].removeAttribute('style');
-        }
-    }
-
     newDate = new Date()
     monthArray = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12' ]
 
@@ -130,108 +67,36 @@ $(document).ready(function() {
 
     var calendar = $('#calendar').fullCalendar({
         header: {
-            left: 'prev,next today',
             center: 'title',
-            right: 'month,agendaWeek,agendaDay'
+            left: 'prev,next',
+            right: 'agendaDay,agendaWeek,month,year'
         },
         events: [
             {
                 id: 'event-1',
-                title: 'All Day Event',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-01T14:30:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-02T14:30:00',
-                className: "bg-danger",
+                title: 'IT Defense',
+                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-02T14:30:00',
+                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-03T14:30:00',
+                className: "bg-success",
                 description: 'Aenean fermentum quam vel sapien rutrum cursus. Vestibulum imperdiet finibus odio, nec tincidunt felis facilisis eu. '
             },
             {
                 id: 'event-2',
-                title: 'Long Event',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-07T19:30:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-09T14:30:00',
+                title: '3rd Convocation Lecture',
+                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-07T10:30:00',
+                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-08T12:30:00',
                 className: "bg-primary",
                 description: 'Etiam a odio eget enim aliquet laoreet. Vivamus auctor nunc ultrices varius lobortis.'
             },
             {
                 id: 'event-3',
-                title: 'Conference',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-17T14:30:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-18T14:30:00',
-                className: "bg-warning",
-                description: 'Proin et consectetur nibh. Mauris et mollis purus. Ut nec tincidunt lacus. Nam at rutrum justo, vitae egestas dolor. '
-            },
-            {
-                id: 'event-4',
-                title: 'Meeting',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-12T10:30:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-13T10:30:00',
-                className: "bg-danger",
-                description: 'Mauris ut mauris aliquam, fringilla sapien et, dignissim nisl. Pellentesque ornare velit non mollis fringilla.'
-            },
-            {
-                id: 'event-5',
-                title: 'Lunch',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-12T15:00:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-13T15:00:00',
-                className: "bg-warning",
-                description: 'Integer fermentum bibendum elit in egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus.'
-            },
-            {
-                id: 'event-6',
-                title: 'Meeting',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-12T21:30:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-13T21:30:00',
+                title: 'IT Defense',
+                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-011T12:30:00',
+                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-012T14:30:00',
                 className: "bg-success",
-                description: 'Curabitur facilisis vel elit sed dapibus. Nunc sagittis ex nec ante facilisis, sed sodales purus rhoncus. Donec est sapien, porttitor et feugiat sed, eleifend quis sapien. Sed sit amet maximus dolor.'
-            },
-            {
-                id: 'event-7',
-                title: 'Happy Hour',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-12T05:30:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-13T05:30:00',
-                className: "bg-warning",
-                description: 'Morbi odio lectus, porttitor molestie scelerisque blandit, hendrerit sed ex. Aenean malesuada iaculis erat, vitae blandit nisl accumsan ut.'
-            },
-            {
-                id: 'event-8',
-                title: 'Dinner',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-12T20:00:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-13T20:00:00',
-                className: "bg-danger",
-                description: 'Sed purus urna, aliquam et pharetra ut, efficitur id mi. Pellentesque ut convallis velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-            },
-            {
-                id: 'event-9',
-                title: 'Click for Designreset',
-                url: 'http://designreset.com/',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-27T20:00:00',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-28T20:00:00',
-                className: "bg-success",
-                description: 'Sed purus urna, aliquam et pharetra ut, efficitur id mi. Pellentesque ut convallis velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-            },
-            {
-                id: 'event-10',
-                title: 'new event',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-24T08:12:14',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-27T22:20:20',
-                className: "bg-danger",
-                description: 'Sed purus urna, aliquam et pharetra ut, efficitur id mi. Pellentesque ut convallis velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-            },
-            {
-                id: 'event-12',
-                title: 'Other new',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('dec') +'-13T08:12:14',
-                end: newDate.getFullYear() + '-' + getDynamicMonth('dec') +'-16T22:20:20',
-                className: "bg-primary",
-                description: 'Pellentesque ut convallis velit. Sed purus urna, aliquam et pharetra ut, efficitur id mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-            },
-            {
-                id: 'event-13',
-                title: 'Upcoming Event',
-                start: newDate.getFullYear() + '-'+ getDynamicMonth('inc') +'-15T08:12:14',
-                end: newDate.getFullYear() + '-'+ getDynamicMonth('inc') +'-18T22:20:20',
-                className: "bg-primary",
-                description: 'Pellentesque ut convallis velit. Sed purus urna, aliquam et pharetra ut, efficitur id mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                description: 'Aenean fermentum quam vel sapien rutrum cursus. Vestibulum imperdiet finibus odio, nec tincidunt felis facilisis eu. '
             }
+            
 
         ],
         editable: true,

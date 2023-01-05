@@ -25,13 +25,32 @@
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/fullcalendar/custom-fullcalendar.advance.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/flatpickr/flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="plugins/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/forms/theme-checkbox-radio.css" rel="stylesheet" type="text/css" />
     <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
     <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" class="dashboard-analytics" />
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 </head>
 <body>
-    <app-navigaton class="app-nav"></app-navigaton>
+    <div id="heading">
+        <app-navigaton class="app-nav"></app-navigaton>
+        <span id="span">
+            <h2>Activity List</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <br> tempor incididunt ut labore et dolore magna aliqua</p>
+        </span>
+    </div>
     <div id="wrapper">
+        <div id="content" class="main-content">
+                <div class="statbox widget box box-shadow">
+                    <div class="widget-content widget-content-area">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+        </div>
 
         <div id="activity_section">
             <span id="span">
@@ -39,79 +58,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     <br> tempor incididunt ut labore et dolore magna aliqua</p>
             </span>
-            <div id="activity">
-                <section>
-                    <img src="./images/activity/Group 70.png">
-                    <div>
-                        <h2>Inauguration of New Elected SRC executives</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            <br> adipiscing elit, sed do eiusmod tempor 
-                            <br> incididunt consequat. Duis aute irure dolor in 
-                            <br> reprehenderit in voluptate velit esse cillum dolore eu 
-                            <br><em>Continue Reading...</em></p>
-                    </div>
-                </section>
-                <section>
-                    <img src="./images/activity/Group 70.png">
-                    <div>
-                        <h2>Inauguration of New Elected SRC executives</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            <br> adipiscing elit, sed do eiusmod tempor 
-                            <br> incididunt consequat. Duis aute irure dolor in 
-                            <br> reprehenderit in voluptate velit esse cillum dolore eu 
-                            <br><em>Continue Reading...</em></p>
-                    </div>
-                </section>
-            </div>
-            <div id="activity">
-                <section>
-                    <img src="./images/activity/Group 70.png">
-                    <div>
-                        <h2>Inauguration of New Elected SRC executives</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            <br> adipiscing elit, sed do eiusmod tempor 
-                            <br> incididunt consequat. Duis aute irure dolor in 
-                            <br> reprehenderit in voluptate velit esse cillum dolore eu 
-                            <br><em>Continue Reading...</em></p>
-                    </div>
-                </section>
-                <section>
-                    <img src="./images/activity/Group 70.png">
-                    <div>
-                        <h2>Inauguration of New Elected SRC executives</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            <br> adipiscing elit, sed do eiusmod tempor 
-                            <br> incididunt consequat. Duis aute irure dolor in 
-                            <br> reprehenderit in voluptate velit esse cillum dolore eu 
-                            <br><em>Continue Reading...</em></p>
-                    </div>
-                </section>
-            </div>
-            <div id="activity">
-                <section>
-                    <img src="./images/activity/Group 70.png">
-                    <div>
-                        <h2>Inauguration of New Elected SRC executives</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            <br> adipiscing elit, sed do eiusmod tempor 
-                            <br> incididunt consequat. Duis aute irure dolor in 
-                            <br> reprehenderit in voluptate velit esse cillum dolore eu 
-                            <br><em>Continue Reading...</em></p>
-                    </div>
-                </section>
-                <section>
-                    <img src="./images/activity/Group 70.png">
-                    <div>
-                        <h2>Inauguration of New Elected SRC executives</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            <br> adipiscing elit, sed do eiusmod tempor 
-                            <br> incididunt consequat. Duis aute irure dolor in 
-                            <br> reprehenderit in voluptate velit esse cillum dolore eu 
-                            <br><em>Continue Reading...</em></p>
-                    </div>
-                </section>
-            </div>
-
+            <app-activity></app-activity>
         </div>
     </div>
     <app-newsletter></app-newsletter>
@@ -119,6 +66,7 @@
     <app-footer></app-footer>
 
     <script src="js/Nav-component.js"></script>
+    <script src="js/activity/activity.js"></script>
     <script src="./js/Components.js"></script>
     <script src="js/Footer-component.js"></script>
 
@@ -127,6 +75,7 @@
     <!-- Do not touch. Just code. Do no come into this section. I do not know what it does but it is neccessary -->
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
@@ -140,8 +89,14 @@
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="plugins/fullcalendar/moment.min.js"></script>
+    <script src="plugins/flatpickr/flatpickr.js"></script>
+    <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
     <script src="plugins/apex/apexcharts.min.js"></script>
     <script src="assets/js/dashboard/dash_1.js"></script>
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    
+     <!--  BEGIN CUSTOM SCRIPTS FILE  -->
+     <script src="plugins/fullcalendar/custom-fullcalendar.advance.js"></script>
+     <!--  END CUSTOM SCRIPTS FILE  -->
 </body>
 </html>
