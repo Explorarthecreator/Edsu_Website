@@ -49,7 +49,10 @@ class Footer extends HTMLElement{
                             Security
                         </a>
                         <a href="">
-                            Tuition and Fees
+                            Tuition
+                        </a>
+                        <a href="">
+                            Fees
                         </a>
                     </div>
 
