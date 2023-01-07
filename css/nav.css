@@ -15,8 +15,13 @@ h1{
     padding: 0;
     /* border: 1px solid; */
 }
-
+/* .link-mobile{
+    display: none;
+} */
 @media screen and (min-width:760px){
+    .link-mobile{
+        display: none;
+    }
     .nav{
         width: 85%;
         margin: auto;
@@ -103,14 +108,12 @@ h1{
         border: 1px solid #203b93;
         color: #203b93;
     }
-
     .footer{
         width: 100%;
         margin: auto;
         margin-top: 100px;
         padding: 15px 30px;
         background-color: #ffffff;
-
     }
     .footer .footer-container{
         display: flex;
@@ -239,7 +242,6 @@ h1{
         height: 73px;
     }
     .logo h3{
-
         font-family: 'Oswald', sans-serif;
         font-style: normal;
         font-weight: 600;
@@ -247,7 +249,6 @@ h1{
         line-height: 33px;
         color: #261F1F;
     }
-
     
     .nav ul {
         margin: 0;
@@ -350,11 +351,15 @@ h1{
         color: 06040A;
     }
     .list-links{
-        display: inline-block;
-        margin: 0 5px 0 0;
+        display: none;
+        /* margin: 0 5px 0 0; */
     }
-    .list-links a{
 
+    .link-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-link a{
         display: block;
         text-decoration: none;
         color: #544E5D;
@@ -364,8 +369,7 @@ h1{
         line-height: 24px;
         margin: 15px 0;
     }
-
-
+    .list-link h3{
         font-family: 'Oswald', sans-serif;
         font-style: normal;
         font-weight: 600;
