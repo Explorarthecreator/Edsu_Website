@@ -146,7 +146,7 @@ h1{
         font-size: 60px;
         font-weight: 600;
         line-height: 60px;
-        color: #410ea6;
+        color: #06040A;
         text-align: center;
         margin-top: 50px;
         /* margin: auto; */
@@ -224,6 +224,7 @@ h1{
         /* background-color: #410ea6; */
         width: 85%;
         margin: auto;
+        margin-bottom: 20px;
     }
     /*
     .icon-box{

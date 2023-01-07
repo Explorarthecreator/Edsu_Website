@@ -104,6 +104,80 @@ class Footer extends HTMLElement{
                         </a>
                     </div>
 
+                    <div class="link-mobile">
+                            <div class="list-link">
+                            <h3>
+                                EDSU
+                            </h3>
+                            <a href="">
+                                Why EDSU
+                            </a>
+                            <a href="">
+                                Programs
+                            </a>
+                            <a href="">
+                                Scholarship
+                            </a>
+                            <a href="">
+                                Security
+                            </a>
+                            <a href="">
+                                Tuition
+                            </a>
+                            <a href="">
+                                Fees
+                            </a>
+                        </div>
+
+                        <div class="list-link">
+                            <h3>
+                                Resources
+                            </h3>
+                            <a href="">
+                                Download
+                            </a>
+                            <a href="">
+                                Help Center
+                            </a>
+                            <a href="">
+                                Events
+                            </a>
+                            <a href="">
+                                Guides
+                            </a>
+                            <a href="">
+                                Partner
+                            </a>
+                            <a href="">
+                                Directories
+                            </a>
+                        </div>
+
+                        <div class="list-link">
+                            <h3>
+                                Community
+                            </h3>
+                            <a href="">
+                                About us
+                            </a>
+                            <a href="">
+                                Contact us
+                            </a>
+                            <a href="">
+                                Academics
+                            </a>
+                            <a href="">
+                                Register
+                            </a>
+                            <a href="">
+                                LMS
+                            </a>
+                            <a href="">
+                                FAQ
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="address">
                         <h3>
                             Get in Touch with Us
