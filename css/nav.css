@@ -15,8 +15,13 @@ h1{
     padding: 0;
     /* border: 1px solid; */
 }
-
+/* .link-mobile{
+    display: none;
+} */
 @media screen and (min-width:760px){
+    .link-mobile{
+        display: none;
+    }
     .nav{
         width: 85%;
         margin: auto;
@@ -346,10 +351,15 @@ h1{
         color: 06040A;
     }
     .list-links{
-        display: inline-block;
-        margin: 0 5px 0 0;
+        display: none;
+        /* margin: 0 5px 0 0; */
     }
-    .list-links a{
+
+    .link-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-link a{
         display: block;
         text-decoration: none;
         color: #544E5D;
@@ -359,10 +369,7 @@ h1{
         line-height: 24px;
         margin: 15px 0;
     }
-    .list-links a:hover{
-        color: #203B93;
-    }
-    .list-links h3{
+    .list-link h3{
         font-family: 'Oswald', sans-serif;
         font-style: normal;
         font-weight: 600;
