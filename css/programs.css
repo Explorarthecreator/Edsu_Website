@@ -1,15 +1,16 @@
 /* Overall CSS (Body) */
 #overall_container{
+    padding:0;
     top: 0;
     left: 0;
     width: 100%;
-    height: 500%;
+    height: 430%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:60px 0px;
-    margin-bottom: 100px;
+    /* gap:60px 0px; */
+    /* margin-bottom: 100px; */
 }
 
 
@@ -19,14 +20,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:20px;
-    height:60%;
-    width:90%;
+    margin-top: 10px;
+    gap:10px;
+    height:25%;
+    width:85%;
     text-align: center;
     background-image:url('../images/programs/background.png');
     background-position: cover;
     background-size:101% 100%;
     background-repeat: no-repeat; 
+    border:2px solid red;
 }
 #header h1 {
     font-family: 'Oswald';
@@ -44,13 +47,14 @@
 
 /* CSS for the new programs */
 #new_program{
-    height: 35%;
-    width:90%;
+    height: 25%;
+    width:85%;
     display: flex;
     flex-direction: row;
     align-items: center; 
     justify-content: flex-start;
-    gap: 10px 90px;
+    gap: 10px 100px;
+    border:2px solid rgb(47, 50, 255);
 }
 img{
     width: 33%;
@@ -59,7 +63,7 @@ img{
     background-repeat: no-repeat; 
 }
 #new_program #contents{
-    line-height: 130%;
+    line-height: 150%;
 }
 #new_program h4{
     font-size: 15px;
@@ -100,15 +104,16 @@ img{
 
 /* Choose program CSS */
 #choose_program{
-    height: 45%;
+    height: 25%;
     width:100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
     background-color: #F9F9FA;
     padding: 25px;
+    border: 2px solid green;
 }
 #choose_program #cp_header {
     text-align: center;
@@ -156,14 +161,16 @@ img{
     font-family: "Poppins";
 }
 
+/* Study CSS */
 #study{
     height: 110%;
-    width:90%;
+    width:85%;
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
     gap:30px;
+    border: 2px solid rgb(255, 0, 234);
 
 }
 #study h2{
@@ -173,14 +180,12 @@ img{
 }
 #study #filter{
     border-radius: 7px;
-    width: 148%;
+    width:84.5vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: -24%;
-    gap:0px 20px;
-    padding:2px;
-    box-shadow: rgb(234, 230, 230) 2px 1px 2px 2px;
+    border:2px solid orangered;
+    box-shadow: rgb(232, 232, 232) 2px 1px 2px 2px;
+    padding:10px;
 }
 
 /* CSS for the faculty filter */
@@ -190,7 +195,7 @@ img{
     color:#203B93;
     font-weight: 600;
 }
-  
+
 .custom-select select {
     display: none; 
 } 
@@ -247,17 +252,15 @@ div.custom-select{
     background-color:#e5e5e5;
 }
 #study #filter #img{
-    width: 1px;
+    width: 2px;
     height: 30px;
 }
 #study #filter span{
     display: flex;
     height: 30px;
-    width: 70%;
+    width: 58%;
     align-items: center;
-    justify-content: center;
-    gap:0px 190px;
-    padding-right: 15px;
+    margin:0px 20px;
 }
 #study #filter span input{
     width: 100%;
