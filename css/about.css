@@ -54,71 +54,6 @@ body {
     margin-top: 40px;
 }
 
-.our-vision {
-    width: 85%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 7rem auto 0 auto;
-}
-
-.our-vision .our-vision-image img {
-    width: 400px;
-}
-
-.our-vision .our-vision-text h1 {
-    font-family: 'Oswald', sans-serif;
-    color: #06040A;
-    font-size: xx-large;
-    padding-bottom: 15px;
-    font-weight: bold;
-}
-
-.our-vision .our-vision-text span {
-    color: #64DD17;
-}
-
-.our-vision .our-vision-text p {
-    text-align: justify;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #06040A;
-    width: 500px;
-}
-
-.our-mission {
-    width: 85%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 7rem auto 0 auto;
-}
-
-.our-mission .our-mission-image img {
-    width: 400px;
-}
-
-.our-mission .our-mission-text h1 {
-    font-family: 'Oswald', sans-serif;
-    color: #06040A;
-    font-size: xx-large;
-    padding-bottom: 15px;
-    font-weight: bold;
-}
-
-.our-mission .our-mission-text span {
-    color: #64DD17;
-}
-
-.our-mission .our-mission-text p {
-    text-align: justify;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #06040A;
-    width: 500px;
-}
 
 .building-gallery {
     margin-top: 6rem;
@@ -231,6 +166,72 @@ body {
 }
 /* Explorar did this. John check it out */
 @media screen and (min-width:760px){
+    .our-vision {
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 7rem auto 0 auto;
+    }
+    
+    .our-vision .our-vision-image img {
+        width: 400px;
+    }
+    
+    .our-vision .our-vision-text h1 {
+        font-family: 'Oswald', sans-serif;
+        color: #06040A;
+        font-size: xx-large;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .our-vision .our-vision-text span {
+        color: #64DD17;
+    }
+    
+    .our-vision .our-vision-text p {
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #06040A;
+        width: 500px;
+    }
+    
+    .our-mission {
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 7rem auto 0 auto;
+    }
+    
+    .our-mission .our-mission-image img {
+        width: 400px;
+    }
+    
+    .our-mission .our-mission-text h1 {
+        font-family: 'Oswald', sans-serif;
+        color: #06040A;
+        font-size: xx-large;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .our-mission .our-mission-text span {
+        color: #64DD17;
+    }
+    
+    .our-mission .our-mission-text p {
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #06040A;
+        width: 500px;
+    }
+    
     .text {
         background: #ffff;
         width: 70%;
@@ -478,5 +479,76 @@ body {
     }
     .social a i{
         font-size: 1em;
+    }
+
+    .our-vision {
+        width: 90%;
+        justify-content: space-between;
+        margin:40px auto;
+        box-shadow: 0px 7px 22px rgba(143, 134, 196, 0.07);
+        border-radius: 14px;
+        padding: 10px;
+        background: #FFFFFF;
+
+    }
+
+    .our-vision .our-vision-image img {
+        width: 100%;
+    }
+
+    .our-vision .our-vision-text h1 {
+        font-family: 'Oswald', sans-serif;
+        color: #06040A;
+        font-size: xx-large;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .our-vision .our-vision-text span {
+        color: #64DD17;
+    }
+    
+    .our-vision .our-vision-text p {
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #06040A;
+        /* width: 500px; */
+    }
+    
+    .our-mission {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin:40px auto;
+        box-shadow: 0px 7px 22px rgba(143, 134, 196, 0.07);
+        border-radius: 14px;
+        padding: 10px;
+        background: #FFFFFF;
+    }
+    
+    .our-mission .our-mission-image img {
+        width: 100%;
+    }
+    
+    .our-mission .our-mission-text h1 {
+        font-family: 'Oswald', sans-serif;
+        color: #06040A;
+        font-size: xx-large;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .our-mission .our-mission-text span {
+        color: #64DD17;
+    }
+    
+    .our-mission .our-mission-text p {
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #06040A;
     }
 }
