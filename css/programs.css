@@ -1,22 +1,17 @@
-*{
-    border: 1px solid;
-}
 
 @media screen and (min-width:760px){
         /* Overall CSS (Body) */
     #overall_container{
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 500%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:60px 0px;
-        margin-bottom: 100px;
+        padding:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
-
 
     /* CSS for the header */
     #header {
@@ -45,7 +40,6 @@
         font-weight: 400;
         font-size: 16px;
     }
-
 
     /* CSS for the new programs */
     #new_program{
@@ -101,6 +95,7 @@
         height: 16px;
         font-family: "Poppins";
     }
+
 
 
     /* Choose program CSS */
@@ -190,6 +185,7 @@
         box-shadow: rgb(234, 230, 230) 2px 1px 2px 2px;
     }
 
+
     /* CSS for the faculty filter */
     .custom-select {
         position: relative;
@@ -233,16 +229,7 @@
         background-color: rgb(255, 255, 255);
     }
 
-    /*style items (options):*/
-    .select-items {
-        position: absolute;
-        border: none;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 99;
-        border: 1px solid black;
-    }
+
 
     /*hide the items when the select box is closed:*/
     .select-hide {

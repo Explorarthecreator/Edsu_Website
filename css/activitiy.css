@@ -85,6 +85,7 @@
     flex-direction:row;
     gap: 30px;
     margin-top:20px;
+    /* border: 2px solid red; */
 }
 #wrapper #activity_section #activity section{
     display: flex;

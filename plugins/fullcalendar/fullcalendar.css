@@ -63,7 +63,7 @@ a.bg-success:hover {
   text-align: center; }
 
 .fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
-  border-color: #f4f7ff; }
+  border-color: #2052da; }
 
 .fc-unthemed .fc-popover {
   background-color: #fff; }
@@ -199,7 +199,7 @@ a.bg-success:hover {
   transition: background-position 0.1s linear; }
 
 .fc-state-active {
-  background-color: #009688;
+  background-color: #203B93;
   background-image: none;
   text-shadow: none;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
@@ -267,12 +267,13 @@ hr.fc-divider {
   border-width: 1px 0; }
 
 .fc-bg table {
-  height: 100%; 
+  height: 80%; 
+  border:2px solid purple;
 }
 
 .fc-row .fc-bgevent-skeleton table, .fc-row .fc-highlight-skeleton table {
   height: 100%;
- }
+}
 
 .fc-clear {
   clear: both; }
@@ -290,6 +291,7 @@ hr.fc-divider {
   table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0;
+  border:1px solid rgb(0, 128, 55);
   font-size: 1em; }
 
 .fc td {
@@ -299,7 +301,7 @@ hr.fc-divider {
   border-width: 1px;
   padding: 0;
   vertical-align: top; 
-  border:1px solid rgb(239, 239, 239)
+  border:1px solid rgb(153, 41, 41)
 }
 
 .fc th {
@@ -309,7 +311,8 @@ hr.fc-divider {
   vertical-align: top;
   font-weight: 600;
   color: #3b3f5c;
-  letter-spacing: 1px; }
+  letter-spacing: 1px; 
+border:8px solid palevioletred}
 
 .fc td.fc-today {
   border-style: double; }
