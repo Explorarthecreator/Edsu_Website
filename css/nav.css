@@ -431,7 +431,7 @@ h1{
         background: transparent;
         border-radius: 14px;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         text-decoration: none;
         color: #544E5D;
