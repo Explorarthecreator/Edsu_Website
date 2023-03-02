@@ -15,13 +15,18 @@
   z-index: 20; }
 
 #content > .container {
-  max-width: 100% !important; }
+  max-width: 100% !important; 
+}
 
 .fc-view {
-  height: calc(100vh - 312px); }
+  height: calc(100vh - 367px); 
+  border: 2px solid rgb(34, 255, 0);
+}
 
 #calendar {
-  height: calc(100vh - 263px); }
+  height: calc(100vh - 323px); 
+  border: 2px solid red;
+}
 
 .popover {
   border: none;
@@ -33,7 +38,8 @@
   box-shadow: none;
   border: 1px solid #e0e6ed;
   box-shadow: 0px 3px 11px 0px rgba(31, 45, 61, 0.1);
-  z-index: 1030; }
+  z-index: 1030; 
+}
 
 .popover-primary .arrow:after, .popover-primary .arrow:before {
   display: none;
@@ -302,7 +308,7 @@ td.fc-today.fc-state-highlight span {
   .fc-scroller, .fc-agendaWeek-view .fc-scroller.fc-time-grid-container, .fc-agendaDay-view .fc-scroller.fc-time-grid-container, .fc-view {
     height: auto !important; }
   .fc-basic-view .fc-body .fc-row {
-    height: 120px !important; }
+    height: 120px !important;}
   .fc-toolbar .fc-left {
     float: none;
     display: block;

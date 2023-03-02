@@ -2,7 +2,7 @@ class Searchbox extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div id="filter">
-        <div class="custom-select" style="width:200px;">
+        <div class="custom-select" style="width:280px;">
             <select>
               <option value="0">Faculty</option>
               <option value="1">Faculty of Applied Health Science</option>
@@ -15,7 +15,7 @@ class Searchbox extends HTMLElement {
           </select>
         </div>
         <img id="img" src="./images/programs/icons/separator.png"/>
-        <div class="custom-select" style="width:200px;">
+        <div class="custom-select" style="width:220px;">
             <select>
               <option value="0">Title</option>
               <option value="1">Bachelor's Degree</option>
@@ -25,7 +25,7 @@ class Searchbox extends HTMLElement {
         </div>
         <img id="img" src="./images/programs/icons/separator.png"/>
         <span>
-            <input type="search" placeholder="Search">
+            <input type="search" placeholder="Search Programs">
             <img class="img" src="./images/programs/icons/search.png">
         </span>
     </div>
