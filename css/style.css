@@ -3,8 +3,34 @@
 }
 *{
     /* border: 1px solid; */
+    margin: 0;
+    box-sizing: border-box;
 }
+
 @media screen and (min-width:760px){
+
+    .bottom{
+        bottom: 30%;
+    }
+    .bottom h3{
+        font-size: 76px;
+        color: #F9F9FA;
+        font-weight: 800;
+        font-family: 'Oswald',sans-serif;
+    }
+    .bottom h5{
+        font-family: 'Poppins', sans-serif;
+        color: #F9F9FA;
+        font-weight: 500;
+        font-size: 35px;
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+
+
+
     .why-choose-us{
         background-color: #F9F9FA;
         padding: 100px 0;
@@ -12,7 +38,7 @@
     }
     .why-choose-us h1{
         text-align: center;
-        font-family: 'Oswald',sans-serif;
+        font-family: 'Oswald',sans-serif; 
         font-style: normal;
         font-weight: 600;
         font-size: 48px;
