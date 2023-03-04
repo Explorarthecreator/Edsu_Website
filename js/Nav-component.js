@@ -26,6 +26,38 @@ class Navigatione extends HTMLElement{
                             Programs
                         </a>
                     </li>
+                    <li id="show">
+                        <a href="contact-us.html" >
+                            Admissions
+                        </a>
+                        <div class="dropdown-content">
+                            <button href="#" class="main-contents undergraduate">
+                                UnderGraduate
+                                <div class="dropdown-content1">
+                                    <a href="#">Admission Details</a>
+                                    <a href="#">School Fees</a>
+                                    <a href="#">Accomodation Details</a>
+                                    <a href="#">Admission Requirement</a>
+                                    <a href="#">Register & Apply</a>
+                                    <a href="#">Transfer Admission</a>
+                                </div>
+                            </button>
+                            <button href="#" class="main-contents conversion">
+                                Conversion Programme
+                                <div class="dropdown-content2">
+                                    <a href="#">Register & Apply</a>
+                                    <a href="#">Login</a>
+                                </div>
+                            </button>
+                            <button class="main-contents post-graduate">
+                                Post Graduate
+                                <div class="dropdown-content3">
+                                    <a href="#">Register & Apply</a>
+                                    <a href="#">Login</a>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
                     <li>
                         <a href="activity.html">
                             Activity
@@ -44,7 +76,7 @@ class Navigatione extends HTMLElement{
                 </ul>
                 <button class="button">
                     <a href="#" class="green">
-                        Sign In
+                        Library
                     </a>
                 </button>
                 <button class="button">
@@ -66,7 +98,7 @@ class Navigatione extends HTMLElement{
                     </a>
                     <button class="button">
                         <a href="#" class="green">
-                            Sign In
+                            Library
                         </a>
                     </button>
                     <button class="button">
