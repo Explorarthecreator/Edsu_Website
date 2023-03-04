@@ -313,7 +313,7 @@
 }
 
 
-@media screen and (max-width:480px) and (min-width:320px){
+@media screen and (max-width:759px) and (min-width:320px){
         /* Overall CSS (Body) */
     #overall_container{
         top: 0;
